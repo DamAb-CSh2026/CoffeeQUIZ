@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Какие два основных вида кофейных зёрен?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/q1Group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q1Correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Арабика и робуста" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Латте и капучино" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Чай и какао" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Что входит в капучино?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/q2Group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Только вода" />
+
+            <RadioButton
+                android:id="@+id/q2Correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Кофе, молоко и молочная пена" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Чай и молоко" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Для чего нужна кофемолка?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/q3Group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q3Correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Для измельчения кофейных зёрен" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Для нагрева молока" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Для взвешивания кофе" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Завершить викторину" />
+
+    </LinearLayout>
+</ScrollView>
